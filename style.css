@@ -1,0 +1,583 @@
+/*--Variables--*/
+:root {
+  --clr-primary-0: #000000;
+  --clr-primary-1: #0084d6;
+  --clr-primary-2: #151545;
+  --clr-primary-3: #0e3852;
+  --clr-primary-4: #ffffff;
+
+  --clr-btn-: #c42c40;
+}
+/*--Global Styles--*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background: var(--clr-primary-4);
+  color: var(--clr-primary-0);
+}
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  color: var(--clr-primary-1);
+  font-size: 2.5rem;
+}
+h2 {
+  color: var(--clr-primary-1);
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 0.85rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+section {
+  margin: 4em 0;
+}
+/* End of global classes */
+
+/* ================================================================================ */
+/* ---NavBar--------- */
+.navbar {
+  width: 100%;
+
+  background-color: var(--clr-primary-4);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  box-shadow: 0px 14px 45px -24px var(--clr-primary-0);
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary-2);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5em;
+}
+.nav-logo img {
+  width: 12rem;
+}
+.navbar .menu-btn i {
+  color: black;
+  cursor: pointer;
+  width: 3rem;
+  display: none;
+}
+#click {
+  display: none;
+}
+/*
+=============== 
+Navbar
+===============
+
+
+
+
+/* ------- Banner --------- */
+.formbox {
+  width: 17rem;
+  height: 23.5rem;
+  background-color: var(--clr-primary-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-inline: auto;
+  border: 1px solid #c2c2c2;
+  border-radius: 0.65rem;
+  margin-top: 3em;
+}
+.formitems {
+  width: 100%;
+  position: absolute;
+  top: 13%;
+}
+.form-context {
+  display: flex;
+  flex-direction: column;
+  margin: 8.5px auto;
+  box-sizing: content-box;
+  height: 22px;
+  width: 85%;
+  padding: 0px 4px;
+  border: 1px solid #c2c2c2;
+  border-radius: 3.5px;
+}
+
+.applynow-title {
+  position: absolute;
+  top: 10.3%;
+  left: 5%;
+  font-weight: 620;
+}
+
+#formcap {
+  position: absolute;
+  width: 197px;
+  top: 71%;
+}
+
+#formcap img {
+  width: 100%;
+  height: 100%;
+}
+.submit-button {
+  position: absolute;
+  top: 90%;
+  left: 67%;
+  width: 4.5rem;
+  background-color: var(--clr-btn-);
+  border-radius: 6px;
+  border: none;
+  color: var(--clr-primary-4);
+  padding: 4px 0px 15px;
+  height: 1.5rem;
+  font-size: 11px;
+}
+.arrow-icon1 {
+  position: absolute;
+  top: 44.3%;
+  left: 88%;
+}
+
+.arrow-icon2 {
+  position: absolute;
+  top: 53%;
+  left: 88%;
+}
+
+.arrow-icon3 {
+  position: absolute;
+  top: 61.4%;
+  left: 88%;
+}
+input,
+input::placeholder {
+  font: 9px/3 system-ui;
+  font-weight: 400;
+}
+/* --End of Banner --------- */
+/* ================================================================================ */
+/* ---- About Parul University’s Study Abroad---- */
+
+.about {
+  width: 90%;
+  margin-inline: auto;
+}
+.aboutbox1 {
+  margin-bottom: 2em;
+}
+.aboutbox1 h1 {
+  margin-bottom: 1em;
+}
+.aboutbox1 p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+/* --Choose The Parul University Experience!-- */
+.University--Experience {
+  background-image: url(./image/Choose\ The\ Parul\ University\ Experience!\ BG@2x.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4em;
+}
+.University--Experience h1 {
+  text-align: center;
+  color: var(--clr-primary-1);
+  margin: 1em 0;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info > * {
+  text-align: center;
+  width: 12rem;
+  margin: 1em auto;
+}
+.info .box h3 {
+  color: #0e3852;
+}
+.info .box p {
+  font-size: 1em;
+  font-weight: 400;
+}
+/* ----- End of Choose The Parul University Experience!-------- */
+
+/* -- WHY PU Study Abroad Center -- */
+.study-center {
+  width: 90%;
+  margin-inline: auto;
+}
+.study-center h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+.study-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.study-box .box p {
+  font-size: 1.25rem;
+}
+.study-box > * {
+  max-width: 16rem;
+  margin: 1em;
+  padding: 7em 1em;
+  color: var(--clr-primary-4);
+  text-align: center;
+}
+.bclr1 {
+  background-color: var(--clr-primary-1);
+}
+
+.bclr2 {
+  background-color: #0e3852;
+}
+/* Here Is How We Help You Study Abroad */
+.study-abroad {
+  max-width: 65rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.study-abroad p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sa-title p,
+h1 {
+  text-align: center;
+}
+.sabox p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.sainfo1,
+.sainfo2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sabox {
+  width: 7rem;
+  color: #0e3852;
+  text-align: center;
+  margin: 1em;
+}
+.sabox img {
+  width: 5rem;
+  margin: 1em auto;
+}
+
+/* End of Here Is How We Help You Study Abroad */
+
+/* 
+================================================================================ */
+/* Our Students Who Made It Abroad */
+
+.ourstudent {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.ourstudent h2 {
+  margin: 1em;
+  text-align: center;
+}
+
+.sbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+  margin-inline: auto;
+  align-items: center;
+  background-color: #0e3852;
+  position: relative;
+}
+.sboxtext {
+  padding: 1em;
+}
+.sboximg,
+.sboxtext {
+  width: 10em;
+}
+
+.sbox h3 {
+  margin: 1em;
+  color: #fbbb2c;
+}
+.sbox p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--clr-primary-4);
+}
+.img1,
+.img2 {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+}
+
+.img2 {
+  top: 35%;
+}
+.img3,
+.img4 {
+  position: absolute;
+
+  top: 60%;
+  right: 45.5%;
+}
+
+.img4 {
+  top: 85%;
+}
+
+.img3 img,
+.img2 img,
+.img1 img,
+.img4 img {
+  width: 0.9rem;
+}
+/* Why Learn Languages with PU */
+.section--bg {
+  background-image: url(./image/Providing\ The\ Right\ Language\ Training\ BG.png);
+}
+.langauge {
+  background-position: center;
+  background-size: cover;
+
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-inline: auto;
+}
+
+.lanbox1 p {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 2em auto;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+.lanbox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.inline-elements img {
+  width: 6px;
+}
+.inline-elements {
+  display: flex;
+  padding-left: 1em;
+  align-items: baseline;
+  gap: 1em;
+}
+.lanbox2 h3 {
+  font-size: 1.2rem;
+}
+.inline-elements p {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.5;
+}
+/* A Glimpse of Study Abroad Possibilities */
+.Abroad-Possibilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
+  flex-direction: column;
+}
+.ap-title h2 {
+  text-align: center;
+}
+.apinfo1,
+.apinfo2 {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.apbox img {
+  width: 14rem;
+}
+.apbox h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.apbox p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.apinfo1 .apbox,
+.apinfo2 .apbox {
+  margin: 1.5em;
+}
+
+/*  Our Successful Students */
+.Successful-student {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.ssRelativeText {
+  border: 1px solid #c2c2c2;
+  width: 10rem;
+
+  text-align: center;
+  padding: 0.85em;
+  background-color: var(--clr-primary-4);
+}
+.ssRelativeText h3 {
+  font-size: 0.85rem;
+}
+.ssRelativeText p {
+  font-size: 0.75rem;
+}
+/* Scholarship Opportunities */
+
+.scholarship {
+  width: 100%;
+  padding: 3em;
+
+  background-image: url(./image/Scholarship\ Opportunities\ To\ Support\ Your\ Learning\ BG.png);
+}
+.scholarship h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(236, 241, 243);
+  text-align: center;
+  margin: 0.85em;
+}
+.scholarship p {
+  font-size: 0.86rem;
+  color: rgb(236, 241, 243);
+  text-align: center;
+  margin: 0.85em;
+}
+
+/* Our Happy Learners */
+.happyLearners {
+  max-width: 61rem;
+  margin-inline: auto;
+}
+.happyLearners h2 {
+  text-align: center;
+  margin: 1em;
+}
+.happyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.happyBox {
+  border: 1.5px solid #427899;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 22rem;
+  margin: 1em auto;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  padding: 2em;
+}
+.happyContainer > * {
+  flex: 1;
+}
+.happyBox > * {
+  margin: 1em;
+}
+.happyBox > p {
+  margin: 2em;
+}
+
+.happyfooterImage1 img,
+.happyfooterImage2 img {
+  width: 60px;
+}
+.happyfooterImage1,
+.happyfooterImage2 {
+  position: absolute;
+  top: 83%;
+}
+.happyBox p {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+.happyBox h3 {
+  color: #427899;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(14, 56, 82);
+
+  text-align: center;
+
+  padding: 1em;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: rgb(205, 214, 217);
+  font-weight: 500;
+}

@@ -1,0 +1,160 @@
+@media screen and (min-width: 850px) {
+  .header {
+    position: relative;
+  }
+  .formbox {
+    position: absolute;
+    top: 16%;
+
+    left: 75%;
+  }
+  /* ---- About Parul University’s Study Abroad---- */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutbox1 {
+    max-width: 30rem;
+  }
+  .about > * {
+    flex-basis: 100%;
+    margin-inline: 1em;
+  }
+
+  /* --Choose The Parul University Experience!-- */
+
+  .info {
+    max-width: 64rem;
+    margin-inline: auto;
+  }
+  /* -- WHY PU Study Abroad Center -- */
+  .study-box {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* Here Is How We Help You Study Abroad */
+  .sabox {
+    width: 12rem;
+    margin: 2em;
+  }
+
+  /* Our Students Who Made It Abroad */
+  .sboximg,
+  .sboxtext {
+    width: 11.5em;
+  }
+  .sbox {
+    width: 46rem;
+  }
+  .img1,
+  .img2 {
+    position: absolute;
+    top: 23%;
+    right: 75%;
+  }
+
+  .img2 {
+    right: 25%;
+  }
+  .img3,
+  .img4 {
+    position: absolute;
+    top: 72%;
+    right: 73%;
+  }
+  .img4 {
+    right: 23%;
+  }
+
+  /* Why Learn Languages with PU */
+  .langauge {
+    flex-direction: row;
+    gap: 12rem;
+    padding: 3em;
+  }
+  .lanbox1 {
+    max-width: 26rem;
+  }
+
+  /*  Our Successful Students */
+  .Successful-student {
+    width: 48rem;
+    justify-content: space-between;
+  }
+
+  #ss1,
+  #ss2 {
+    position: absolute;
+    top: 34%;
+    left: 55%;
+  }
+  #ss2 {
+    left: 86%;
+  }
+  #ss3,
+  #ss4,
+  #ss5 {
+    position: absolute;
+    top: 84%;
+    left: 16%;
+  }
+  #ss4 {
+    left: 50%;
+  }
+  #ss5 {
+    left: 85%;
+  }
+  .ssbox h4 {
+    font-size: 1.2rem;
+  }
+  .ssimg {
+    margin: 3em;
+    width: 10rem;
+  }
+  .ssbox {
+    max-width: 16rem;
+  }
+  /* Our Happy Learners */
+
+  .happyContainer {
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-inline: auto;
+    gap: 10rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navlist {
+    position: fixed;
+    top: 63px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: whitesmoke;
+    display: block;
+    text-align: center;
+    left: -100%;
+    box-shadow: 0px 14px 45px -24px var(--clr-primary-0);
+  }
+  #click:checked ~ ul {
+    left: 0%;
+  }
+
+  li {
+    margin: 2em;
+  }
+
+  a:hover,
+  a.active {
+    color: #1b1b1b;
+    background-color: #fff;
+  }
+  .navbar .menu-btn i {
+    display: block;
+  }
+}
